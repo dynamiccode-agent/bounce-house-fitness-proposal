@@ -1946,7 +1946,7 @@
         const now = new Date();
         const timeStr = now.toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
         const acceptance = { name: name, date: '3 June 2026', timestamp: now.toISOString(), signature: sigData, ref: 'BHF-2026-001' };
-        try { localStorage.setItem('bhf_proposal_accepted', JSON.stringify(acceptance)); } catch(e) {}
+        try { localStorage.setItem('bhf_proposal_accepted_v2', JSON.stringify(acceptance)); } catch(e) {}
 
         document.getElementById('sigName').disabled = true;
         document.getElementById('tcCheck').disabled = true;
@@ -1963,7 +1963,7 @@
     // Restore accepted state on page load
     window.addEventListener('load', function() {
         try {
-            const saved = localStorage.getItem('bhf_proposal_accepted');
+            const saved = localStorage.getItem('bhf_proposal_accepted_v2');
             if (!saved) return;
             const data = JSON.parse(saved);
             document.getElementById('sigName').value = data.name || '';
