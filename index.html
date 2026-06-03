@@ -22,6 +22,8 @@
             --light: #F7F9FF;
             --white: #ffffff;
             --red: #FF0056;
+            --pink: #f26b94;
+            --pink-pale: rgba(242,107,148,0.08);
             --border: #E5E9F2;
         }
 
@@ -66,7 +68,7 @@
             position: absolute;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(255,107,43,0.12) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(242,107,148,0.18) 0%, transparent 70%);
             bottom: -100px;
             left: -100px;
         }
@@ -103,11 +105,11 @@
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: var(--orange);
-            border: 1.5px solid rgba(255,107,43,0.4);
+            color: var(--pink);
+            border: 1.5px solid rgba(242,107,148,0.4);
             padding: 7px 16px;
             border-radius: 100px;
-            background: rgba(255,107,43,0.08);
+            background: rgba(242,107,148,0.08);
         }
 
         .hero-content {
@@ -203,6 +205,17 @@
             transform: translateY(-2px);
         }
 
+        .hero-client-logo {
+            height: 60px;
+            width: 60px;
+            border-radius: 13px;
+            object-fit: cover;
+            border: 1.5px solid rgba(242,107,148,0.35);
+            box-shadow: 0 4px 20px rgba(242,107,148,0.2);
+            margin-bottom: 24px;
+            display: block;
+        }
+
         /* ── INVESTMENT BAND ── */
         .invest-band {
             background: var(--blue);
@@ -276,6 +289,7 @@
         }
 
         .eyebrow.orange { color: var(--orange); }
+        .eyebrow.pink { color: var(--pink); }
 
         h2.section-title {
             font-family: 'Poppins', sans-serif;
@@ -1145,6 +1159,7 @@
     </nav>
 
     <div class="hero-content">
+        <img src="logo-bouncehaus.png" alt="Bounce Haus Fitness" class="hero-client-logo">
         <p class="hero-eyebrow">Prepared for Phillip Di Bella &amp; Lauren Agius · Bounce House Fitness</p>
         <h1 class="hero-title">Build the Platform<br><span class="accent">That Owns</span><br>the Market.</h1>
         <div class="hero-meta">
@@ -1178,7 +1193,7 @@
 
 <!-- ── OVERVIEW ── -->
 <section class="section" id="overview" style="padding-bottom: 0;">
-    <span class="eyebrow">The Opportunity</span>
+    <span class="eyebrow pink">The Opportunity</span>
     <h2 class="section-title">Trampoline fitness is<br>having its moment.</h2>
     <p class="section-sub">The trampoline exercise category is exploding — and Bounce House Fitness is positioned to become the definitive online destination for it. This is a full-stack membership platform that puts Phillip and Lauren in control: own the content, own the audience, own the revenue.</p>
 </section>
@@ -1205,7 +1220,7 @@
             <div class="include-card">
                 <div class="include-icon">🎥</div>
                 <h3>Weekly Video Upload System</h3>
-                <p>Admin-controlled video publishing with a simple dashboard. Add new content weekly — drip-fed to members on a schedule you control.</p>
+                <p>Admin-controlled video publishing with a simple dashboard. Add new content weekly — drip-fed to members on a schedule you control. <strong>Video hosting:</strong> on-platform (recommended) or embed via Vimeo as an external link.</p>
             </div>
             <div class="include-card">
                 <div class="include-icon">🔐</div>
@@ -1379,7 +1394,7 @@
             <div class="tech-item">
                 <div class="tech-icon">☁️</div>
                 <h4>Cloud Video Hosting</h4>
-                <p>Scalable video delivery — upload once, stream anywhere, with no bandwidth limits.</p>
+                <p>On-platform hosting (recommended) or Vimeo embed as an external link — both options supported from day one.</p>
             </div>
             <div class="tech-item">
                 <div class="tech-icon">🔒</div>
